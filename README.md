@@ -16,4 +16,16 @@ Buna göre:
 * Çemberin güney yayı boyunca ve daire dışında olacak şekilde büyük harflerle `1923  50 YIL  1973` yazılmıştır.
   Ayrıca başta ve sonda birer siyah nokta gözlenmektedir.
 
-  
+## Yöntem
+* Aylar bayrak tüzüğüne uygun olarak çizilir, bunun için [bayrak](https://github.com/alperali/bayrak)
+  projesindeki bilgi ve birikimden faydalanılır:
+  - ay iç çember yarıçapı = 48
+  - ay dış çember yarıçapı = 60
+  - ay dış çember merkezinin iç çember merkezine uzaklığı = 15
+* Konturu çizmek için merkezi ay dış çemberi merkeziyle aynı, yarıçapı biraz daha fazla (+8 olarak tespit edilmiştir)
+  kırmızı daire çizilir.
+  - kontur çember yarıçapı = 68
+* Bayrak yıldızının bayrak eksenini kestiği nokta, amblem üzerindeki yıldızın bir köşesi sayılır.
+  5 ay için hesaplanan bu noktalar `<polygon>` ile birleştirilerek amblem yıldızı çizilir.
+* Yukarıdaki ölçüye göre çizilen 5 ayın birbirine teğet olacak biçimde yerleşebileceği amblem çemberinin
+  yarıçapı hesaplanmalıdır. Bunun için temel trigonometri kullanılır.
