@@ -44,6 +44,8 @@ Amblem çember merkezinden ay dış çemberinin her iki tarafına teğet doğrul
 `sin(36) = s/h` eşitliğinden `h = s/sin(36)` olur.
 
 ## Çözüm
+➡️ [Tarayıcıda göster](https://alperali.github.io/50yil/50yil.html)
+
 ```html
 <!doctype html>
 <html>
