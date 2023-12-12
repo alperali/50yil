@@ -177,3 +177,45 @@ Amblem çember merkezinden ay dış çemberinin her iki tarafına teğet doğrul
 </body>
 </html>
 ```
+
+## Sonuç
+➡️ [Tarayıcıda göster](https://alperali.github.io/50yil/50yil.svg)
+
+```svg
+<svg version="1.1"
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Orelega+One&amp;display=swap");
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="white"></rect>
+  <circle cx="50%" cy="137.9219029977552" r="68" fill="rgb(227,10,23)"></circle>
+  <circle cx="50%" cy="137.9219029977552" r="68" fill="rgb(227,10,23)" transform="rotate(72,240,240)"></circle>
+  <circle cx="50%" cy="137.9219029977552" r="68" fill="rgb(227,10,23)" transform="rotate(144,240,240)"></circle>
+  <circle cx="50%" cy="137.9219029977552" r="68" fill="rgb(227,10,23)" transform="rotate(216,240,240)"></circle>
+  <circle cx="50%" cy="137.9219029977552" r="68" fill="rgb(227,10,23)" transform="rotate(288,240,240)"></circle>
+  <circle cx="50%" cy="137.9219029977552" r="60" fill="white"></circle>
+  <circle cx="50%" cy="152.9219029977552" r="48" fill="rgb(227,10,23)"></circle>
+  <circle cx="50%" cy="137.9219029977552" r="60" fill="white" transform="rotate(72,240,240)"></circle>
+  <circle cx="50%" cy="152.9219029977552" r="48" fill="rgb(227,10,23)" transform="rotate(72,240,240)"></circle>
+  <circle cx="50%" cy="137.9219029977552" r="60" fill="white" transform="rotate(144,240,240)"></circle>
+  <circle cx="50%" cy="152.9219029977552" r="48" fill="rgb(227,10,23)" transform="rotate(144,240,240)"></circle>
+  <circle cx="50%" cy="137.9219029977552" r="60" fill="white" transform="rotate(216,240,240)"></circle>
+  <circle cx="50%" cy="152.9219029977552" r="48" fill="rgb(227,10,23)" transform="rotate(216,240,240)"></circle>
+  <circle cx="50%" cy="137.9219029977552" r="60" fill="white" transform="rotate(288,240,240)"></circle>
+  <circle cx="50%" cy="152.9219029977552" r="48" fill="rgb(227,10,23)" transform="rotate(288,240,240)"></circle>
+  <circle cx="50%" cy="50%" r="51.07809700224479" fill="rgb(227,10,23)"></circle>
+  <polygon points="240,188.9219029977552 270.0229521330839,281.3230485151481 191.42184300605913,224.2159999859743 288.57815699394087,224.2159999859743 209.97704786691614,281.3230485151481" fill="white"></polygon>
+  <defs>
+    <path id="üstyazı" d="M61.92190299775521,240 A178.0780970022448,178.0780970022448 0 0 1 418.0780970022448,240"></path>
+    <path id="altyazı" d="M29.92190299775521,240 A178.0780970022448,178.0780970022448 0 0 0 450.0780970022448,240"></path>
+  </defs>
+  <text style="font-family: &quot;Orelega One&quot;, serif; font-size: 6.9ex; white-space: pre; letter-spacing: -0.05ex;">
+    <textPath href="#üstyazı">TÜRKİYE  CUMHURİYETİ</textPath>
+  </text>
+  <text style="font-family: &quot;Orelega One&quot;, serif; font-size: 7.3ex; white-space: pre; letter-spacing: 0.1ex;">
+    <textPath href="#altyazı">  ⦁  1923  50 YIL  1973  ⦁  </textPath>
+  </text>
+</svg>
+```
