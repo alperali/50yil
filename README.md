@@ -14,7 +14,7 @@ Buna göre:
 * Daire merkezinde bir adet 5 köşeli yıldız vardır.
 * Çemberin kuzey yayı boyunca ve daire dışında olacak şekilde büyük harflerle `TÜRKİYE CUMHURİYETİ` yazılmıştır.
 * Çemberin güney yayı boyunca ve daire dışında olacak şekilde büyük harflerle `1923  50 YIL  1973` yazılmıştır.
-  Ayrıca başta ve sonda birer siyah nokta gözlenmektedir.
+  Ayrıca başta ve sonda birer siyah nokta vardır.
 
 ## Yöntem
 * Aylar bayrak tüzüğüne uygun olarak çizilir, bunun için [bayrak](https://github.com/alperali/bayrak)
