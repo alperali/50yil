@@ -40,7 +40,7 @@ Ay dış çember yarıçapı *s* = 60 olduğunu biliyoruz. Amblem yapıçapı **
 
 Amblem çember merkezinden ay dış çemberinin her iki tarafına teğet doğrular çekersek, oluşan yayı gören açı `360/5 = 72` olur
 (yeşil açı). **a** ve **c** noktalarından geçen doğru bu açıyı tam ikiye böler, `36` olur (mavi açı).
-**c**'den ay çemberine teğet çekilen doğrunun teğet noktasına **a**'dan çekilen doğru dik açıyla keser, **abc** bir dik üçgendir.
+**c**'den ay çemberine teğet çekilen doğrunun teğet noktasına **a**'dan çekilen doğru dik açıyla iner, **abc** bir dik üçgendir.
 `sin(36) = s/h` eşitliğinden `h = s/sin(36)` olur.
 
 ## Çözüm
