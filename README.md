@@ -1,7 +1,9 @@
 # 50. Yıl Amblemi
 Cumhuriyetin 50. yılı ambleminin Javascript ve SVG kullanılarak çizimidir.
 
-![50. Yıl Amblemi](./50yil.png)
+|   |   |
+| --- | --- |
+| ![50. Yıl Amblemi](./50yil.png) | ![50. Yıl Resim](./orig.png) |
 
 ## Açıklama
 Cumhuriyetimizin 50. yılı için hazırlanmış amblemin resmi bir tüzüğü bulunamamıştır.
