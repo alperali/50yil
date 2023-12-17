@@ -151,13 +151,13 @@ Amblem çember merkezinden ay dış çemberinin her iki tarafına teğet doğrul
 
     const yz_offset = 16;
     let pa = celm('path');
-    pa.setAttribute('id', 'üstyazı')
-    pa.setAttribute('d', `M${vb_en/2 - amblem_yçap - yz_offset},${vb_boy/2} A${amblem_yçap+yz_offset},${amblem_yçap+yz_offset} 0 0 1 ${vb_en/2 + amblem_yçap + yz_offset},${vb_boy/2}`)
+    pa.setAttribute('id', 'üstyazı');
+    pa.setAttribute('d', `M${vb_en/2 - amblem_yçap - yz_offset},${vb_boy/2} a1,1 0 0 1 ${2*amblem_yçap + 2*yz_offset},0`);
     df.appendChild(pa);
     
     pa = celm('path');
-    pa.setAttribute('id', 'altyazı')
-    pa.setAttribute('d', `M${vb_en/2 - amblem_yçap - 3*yz_offset},${vb_boy/2} A${amblem_yçap + yz_offset},${amblem_yçap + yz_offset} 0 0 0 ${vb_en/2 + amblem_yçap + 3*yz_offset},${vb_boy/2}`)
+    pa.setAttribute('id', 'altyazı');
+    pa.setAttribute('d', `M${vb_en/2 - amblem_yçap - 3*yz_offset},${vb_boy/2} a1,1 0 0 0 ${2*amblem_yçap + 6*yz_offset},0`);
     df.appendChild(pa);
 
     let tp = celm('textPath');
@@ -165,15 +165,16 @@ Amblem çember merkezinden ay dış çemberinin her iki tarafına teğet doğrul
     tp.textContent = 'TÜRKİYE  CUMHURİYETİ';
     let tx = celm('text');
     // tx.setAttribute('style', 'font-family: serif; font-weight: bold; font-size: 6.2ex; white-space: pre;');
-    tx.setAttribute('style', 'font-family: "Orelega One", serif; font-size: 6.9ex; white-space: pre; letter-spacing: -0.05ex;');
+    tx.setAttribute('style', 'font-family: "Orelega One", serif; font-size: 49px; word-spacing: 10px; letter-spacing: -0.75px;');
     s.appendChild(tx).appendChild(tp);
 
     tp = celm('textPath');
     tp.setAttribute('href', '#altyazı');
-    tp.textContent = '  \u2981  1923  50 YIL  1973  \u2981  ';   // \u25CF
+    tp.innerHTML = '  \u2981  1923  <tspan style="word-spacing: normal;">50 YIL</tspan>  1973  \u2981  ';   // \u25CF
+    tp.setAttribute('startOffset', '32px');
     tx = celm('text');
     // tx.setAttribute('style', 'font-family: serif; font-weight: bold; font-size: 6.6ex; white-space: pre; letter-spacing: 0.15ex;');
-    tx.setAttribute('style', 'font-family: "Orelega One", serif; font-size: 7.3ex; white-space: pre; letter-spacing: 0.1ex;');
+    tx.setAttribute('style', 'font-family: "Orelega One", serif; font-size: 52px; word-spacing: 20px; letter-spacing: 1.8px;');
     s.appendChild(tx).appendChild(tp);
   </script>
 </body>
@@ -184,8 +185,7 @@ Amblem çember merkezinden ay dış çemberinin her iki tarafına teğet doğrul
 ➡️ [Tarayıcıda göster](https://alperali.github.io/50yil/50yil.svg)
 
 ```svg
-<svg version="1.1"
-  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
   <defs>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Orelega+One&amp;display=swap");
@@ -208,16 +208,20 @@ Amblem çember merkezinden ay dış çemberinin her iki tarafına teğet doğrul
   <circle cx="50%" cy="137.9219029977552" r="60" fill="white" transform="rotate(288,240,240)"></circle>
   <circle cx="50%" cy="152.9219029977552" r="48" fill="rgb(227,10,23)" transform="rotate(288,240,240)"></circle>
   <circle cx="50%" cy="50%" r="51.07809700224479" fill="rgb(227,10,23)"></circle>
-  <polygon points="240,188.9219029977552 270.0229521330839,281.3230485151481 191.42184300605913,224.2159999859743 288.57815699394087,224.2159999859743 209.97704786691614,281.3230485151481" fill="white"></polygon>
+  <polygon
+    points="240,188.9219029977552 270.0229521330839,281.3230485151481 191.42184300605913,224.2159999859743 288.57815699394087,224.2159999859743 209.97704786691614,281.3230485151481"
+    fill="white">
+  </polygon>
   <defs>
-    <path id="üstyazı" d="M61.92190299775521,240 A178.0780970022448,178.0780970022448 0 0 1 418.0780970022448,240"></path>
-    <path id="altyazı" d="M29.92190299775521,240 A178.0780970022448,178.0780970022448 0 0 0 450.0780970022448,240"></path>
+    <path id="üstyazı" d="M61.92190299775521,240 a1,1 0 0 1 356.1561940044896,0"></path>
+    <path id="altyazı" d="M29.92190299775521,240 a1,1 0 0 0 420.1561940044896,0"></path>
   </defs>
-  <text style="font-family: &quot;Orelega One&quot;, serif; font-size: 6.9ex; white-space: pre; letter-spacing: -0.05ex;">
-    <textPath href="#üstyazı">TÜRKİYE  CUMHURİYETİ</textPath>
+  <text style="font-family: 'Orelega One', serif; font-size: 49px; word-spacing: 10px; letter-spacing: -0.75px;">
+    <textPath href="#üstyazı">TÜRKİYE CUMHURİYETİ</textPath>
   </text>
-  <text style="font-family: &quot;Orelega One&quot;, serif; font-size: 7.3ex; white-space: pre; letter-spacing: 0.1ex;">
-    <textPath href="#altyazı">  ⦁  1923  50 YIL  1973  ⦁  </textPath>
+  <text style="font-family: 'Orelega One', serif; font-size: 52px; word-spacing: 20px; letter-spacing: 1.8px;">
+    <textPath href="#altyazı" startOffset="32px"> ⦁ 1923 <tspan style="word-spacing: normal;">50 YIL</tspan> 1973 ⦁ </textPath>
   </text>
 </svg>
 ```
+
