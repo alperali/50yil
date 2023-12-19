@@ -163,18 +163,19 @@ Amblem çember merkezinden ay dış çemberinin her iki tarafına teğet doğrul
     let tp = celm('textPath');
     tp.setAttribute('href', `#üstyazı`);
     tp.textContent = 'TÜRKİYE  CUMHURİYETİ';
+    tp.setAttribute('startOffset', '-4px');
     let tx = celm('text');
     // tx.setAttribute('style', 'font-family: serif; font-weight: bold; font-size: 6.2ex; white-space: pre;');
-    tx.setAttribute('style', 'font-family: "Orelega One", serif; font-size: 49px; word-spacing: 10px; letter-spacing: -0.75px;');
+    tx.setAttribute('style', 'font-family: "Orelega One", serif; font-size: 52px; word-spacing: 10px; letter-spacing: -2.4px;');
     s.appendChild(tx).appendChild(tp);
 
     tp = celm('textPath');
     tp.setAttribute('href', '#altyazı');
-    tp.innerHTML = '  \u2981  1923  <tspan style="word-spacing: normal;">50 YIL</tspan>  1973  \u2981  ';   // \u25CF
+    tp.innerHTML = '  \u2981  1923  <tspan style="word-spacing: normal; font-size: 56px;">50 YIL</tspan>  1973  \u2981  ';   // \u25CF
     tp.setAttribute('startOffset', '32px');
     tx = celm('text');
     // tx.setAttribute('style', 'font-family: serif; font-weight: bold; font-size: 6.6ex; white-space: pre; letter-spacing: 0.15ex;');
-    tx.setAttribute('style', 'font-family: "Orelega One", serif; font-size: 52px; word-spacing: 20px; letter-spacing: 1.8px;');
+    tx.setAttribute('style', 'font-family: "Orelega One", serif; font-size: 52px; word-spacing: 16px; letter-spacing: 1.8px;');
     s.appendChild(tx).appendChild(tp);
   </script>
 </body>
@@ -216,12 +217,11 @@ Amblem çember merkezinden ay dış çemberinin her iki tarafına teğet doğrul
     <path id="üstyazı" d="M61.92190299775521,240 a1,1 0 0 1 356.1561940044896,0"></path>
     <path id="altyazı" d="M29.92190299775521,240 a1,1 0 0 0 420.1561940044896,0"></path>
   </defs>
-  <text style="font-family: 'Orelega One', serif; font-size: 49px; word-spacing: 10px; letter-spacing: -0.75px;">
-    <textPath href="#üstyazı">TÜRKİYE CUMHURİYETİ</textPath>
+  <text style="font-family: 'Orelega One', serif; font-size: 52px; word-spacing: 10px; letter-spacing: -2.4px;">
+    <textPath href="#üstyazı" startOffset="-4px">TÜRKİYE CUMHURİYETİ</textPath>
   </text>
-  <text style="font-family: 'Orelega One', serif; font-size: 52px; word-spacing: 20px; letter-spacing: 1.8px;">
-    <textPath href="#altyazı" startOffset="32px"> ⦁ 1923 <tspan style="word-spacing: normal;">50 YIL</tspan> 1973 ⦁ </textPath>
+  <text style="font-family: 'Orelega One', serif; font-size: 52px; word-spacing: 16px; letter-spacing: 1.8px;">
+    <textPath href="#altyazı" startOffset="32px"> ⦁ 1923 <tspan style="word-spacing: normal; font-size: 56px;">50 YIL</tspan> 1973 ⦁ </textPath>
   </text>
 </svg>
 ```
-
